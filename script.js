@@ -15,7 +15,19 @@ buttonCreateTarefa.addEventListener('click', function(){
 
 olTarefa.addEventListener('click', function(event){
   for (let index = 0; index < liList.length; index += 1){
-    liList[index].style.backgroundColor = 'rgb(128, 128, 128)';
-    event.target.classList.toggle('selected');
+    liList[index].classList.remove('selected');
+    event.target.classList.add('selected');
   }
 })
+
+olTarefa.addEventListener('dblclick', function (event){
+  for (let index = 0; index < liList.length; index += 1){
+    liList[index].classList.remove('completed')
+    event.target.classList.add('completed');
+  }
+});
+
+// shoppingList.addEventListener('dbclick', function (event){
+//   if(event.target.tagName === 'LI')
+//   event.target.classList.toggle('comprado')
+//   });
