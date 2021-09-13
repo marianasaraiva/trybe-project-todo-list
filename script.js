@@ -10,10 +10,14 @@ const buttonApagaTudo = document.getElementById('apaga-tudo');
 // criar li ao digitar tarefa e pressionar o botão
 buttonCreateTarefa.addEventListener('click', function () {
   let elementLi = document.createElement('li');
+  // if(inouTextTarefa.value !== ''){
   elementLi.innerText = inputTextTarefa.value;
   elementLi.classList.add('item-list');
   olTarefa.appendChild(elementLi);
   inputTextTarefa.value = "";
+  // } else {
+
+  // }
 })
 
 // criar seleção da tarefa por cor ao clicar uma vez
@@ -30,19 +34,25 @@ olTarefa.addEventListener('dblclick', function (event) {
     event.target.classList.toggle('completed')
 });
 
-// apagar toda a lista usando o id apaga-tudo no button
-// https://www.horadecodar.com.br/2020/11/06/como-remover-elemento-da-pagina-com-javascript/
-buttonApagaTudo.addEventListener('click', function(){
+// apagar toda a lista usando o id apaga-tudo no button -> usando o removeChild
+// https://www.horadecodar.com.br/2020/11/06/como-remover-elemento-da-pagina-com-javascript/ 
+buttonApagaTudo.addEventListener('click', function () {
   olTarefa.parentNode.removeChild(olTarefa);
 });
 
-
-  // var elemento = document.querySelector("#elemento-para-remover");
-  // elemento.parentNode.removeChild(elemento);
-
-
 // apagar elementos riscados classe completed ao clicar
-// buttonRemoveFinalizados.addEventListener('click', function (event) {
-//   event.target.classList.remove('completed')
+// 11 - Adicione um botão com id="remover-finalizados" que quando clicado remove somente os elementos finalizados da sua lista
+// O que será verificado:
+// Será verificado que existe um elemento button com o id remover-finalizados
+// Será verificado que, ao clicar no botão, todos os elementos marcados como feitos são removidos da lista
 
-// })
+//apagar elementos riscados classe completed ao clicar
+buttonRemoveFinalizados.addEventListener('click', function () {
+  let tarefaFinalizada = document.querySelectorAll('.completed');
+  for (let index = 0; index < tarefaFinalizada.length; index += 1) {
+    olTarefa.removeChild(tarefaFinalizada[index]);
+  }
+});
+
+//https://pt.stackoverflow.com/questions/4605/remover-elemento-da-p%C3%A1gina-com-javascript
+// remover um elemento - identificar o elementos setar o elemento
