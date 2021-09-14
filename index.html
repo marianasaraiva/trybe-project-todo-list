@@ -10,27 +10,33 @@
 </head>
 
 <body>
-  <header>
+  <header class="header">
     <h1>Minha Lista de Tarefas</h1>
     <p id="funcionamento">Clique duas vezes em um item para marcá-lo como completo</p>
   </header>
   
-  <main>
+  <main class="main">
     <section id="container">
-      <input type="text" id="texto-tarefa" placeholder="Digite sua tarefa aqui:">
+      <input type="text" id="texto-tarefa" placeholder="Digite sua tarefa aqui">
+
       <button id="criar-tarefa">Adicionar tarefa</button>
+      
+      <ol id="lista-tarefas">
+      </ol>
 
       <button id="apaga-tudo">Apagar tudo</button>
 
       <button id="remover-finalizados">Remover tarefa</button>
-      <ol id="lista-tarefas">
-      </ol>
+
+      <button id="salvar-tarefas">Salvar tarefas</button>
+
+
     </section>
 
   </main>
 
 
-  <footer>
+  <footer class="footer">
 
   </footer>
 
