@@ -5,6 +5,9 @@ const liList = document.getElementsByClassName('item-list');
 const buttonRemoveFinalizados = document.getElementById('remover-finalizados');
 const buttonApagaTudo = document.getElementById('apaga-tudo');
 const buttonSalvaTarefas = document.getElementById('salvar-tarefas');
+const buttonRemoveSinalizados = document.getElementById('remover-selecionado')
+const buttonMoverCima = document.getElementById('mover-cima');
+const buttonMoverBaixo = document.getElementById('mover-baixo');
 
 // criar li ao digitar tarefa e pressionar o botão
 buttonCreateTarefa.addEventListener('click', () => {
@@ -49,15 +52,25 @@ buttonRemoveFinalizados.addEventListener('click', () => {
   }
 });
 
-//12 - Adicione um botão com id="salvar-tarefas" que salve o conteúdo da lista. Se você fechar e reabrir a página, a lista deve continuar no estado em que estava
-// dica Monitoria com Tales
-buttonSalvaTarefas.addEventListener('click', function () {
+// lógica para salvar o conteúdo da lista no locallStorage e ao abrir a página continuar salvo.
+buttonSalvaTarefas.addEventListener('click', () => {
   localStorage.setItem('listaTarefa', olTarefa.innerHTML);
-}) 
+});
 
 window.onload = function () {
-  if(localStorage.listaTarefa){
-    let recuperaLista = localStorage.getItem('listaTarefa');
+  if (localStorage.listaTarefa) {
+    const recuperaLista = localStorage.getItem('listaTarefa');
     olTarefa.innerHTML = recuperaLista;
   }
-}
+};
+
+// Requisito 13 https://www.javascripttutorial.net/javascript-dom/javascript-siblings/
+
+
+// Requisito 14 - Apagar tarefas selecionadas
+buttonRemoveSinalizados.addEventListener('click', () => {
+  const tarefaSelecionada = document.querySelectorAll('.selected');
+  for (let index = 0; index < tarefaSelecionada.length; index += 1) {
+    olTarefa.removeChild(tarefaSelecionada[index]);
+  }
+});
