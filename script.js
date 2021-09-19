@@ -5,9 +5,9 @@ const liList = document.getElementsByClassName('item-list');
 const buttonRemoveFinalizados = document.getElementById('remover-finalizados');
 const buttonApagaTudo = document.getElementById('apaga-tudo');
 const buttonSalvaTarefas = document.getElementById('salvar-tarefas');
-const buttonRemoveSinalizados = document.getElementById('remover-selecionado')
-const buttonMoverCima = document.getElementById('mover-cima');
-const buttonMoverBaixo = document.getElementById('mover-baixo');
+const buttonRemoveSinalizados = document.getElementById('remover-selecionado');
+// const buttonMoverCima = document.getElementById('mover-cima');
+// const buttonMoverBaixo = document.getElementById('mover-baixo');
 
 // criar li ao digitar tarefa e pressionar o botão
 buttonCreateTarefa.addEventListener('click', () => {
@@ -65,7 +65,6 @@ window.onload = function () {
 };
 
 // Requisito 13 https://www.javascripttutorial.net/javascript-dom/javascript-siblings/
-
 
 // Requisito 14 - Apagar tarefas selecionadas
 buttonRemoveSinalizados.addEventListener('click', () => {

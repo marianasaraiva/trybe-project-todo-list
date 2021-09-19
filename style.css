@@ -1,4 +1,5 @@
-/* SCSS RGB 
+/* 
+SCSS RGB 
 site:  https://coolors.co/
 $alice-blue: rgba(232, 238, 242, 1); azul branco
 $pale-silver: rgba(214, 201, 201, 1); rosa
@@ -8,8 +9,8 @@ $onyx: rgba(55, 57, 58, 1); grafite
 */
 
 body {
-  background-color: rgba(199, 211, 221, 1);
-  color: rgba(55, 57, 58, 1);
+  background-color: rgba(199 , 211 , 221 , 1);
+  color: rgba(55 , 57 , 58 , 1);
   font-family: 'Trebuchet MS', Arial, sans-serif;
   margin: 0;
   padding: 0;
@@ -17,15 +18,15 @@ body {
 
 button {
   border-radius: 5px;
-  border: 1px solid rgba(55, 57, 58, 1);
+  border: 1px solid rgba(55 , 57 , 58 , 1);
   padding: 10px;
   margin: 10px;
-  background-color: rgba(214, 201, 201, 1);
+  background-color: rgba(214 , 201 , 201 , 1);
 }
 
 #texto-tarefa {
   background-color: white;
-  border: 1px solid rgba(55, 57, 58, 1);
+  border: 1px solid rgba(55 , 57 , 58 , 1);
   border-radius: 5px;
   padding: 10px;
   margin: 10px;
@@ -33,13 +34,13 @@ button {
 }
 
 #container {
-  background-color: rgba(232, 238, 242, 1);
+  background-color: rgba(232 , 238 , 242 , 1);
   border-radius: 5px;
   padding-left: 29%;
 }
 
 .header {
-  background-color: rgba(214, 201, 201, 1);
+  background-color: rgba(214 , 201 , 201 , 1);
   position: absolute;
   width: 100%;
 }
@@ -65,10 +66,10 @@ h1 , p {
 }
 
 .completed {
-  color: rgb(0, 0, 0);
+  color: rgb(0 , 0 , 0);
   text-decoration: line-through;
 }
 
 .selected {
-  background-color: rgb(128, 128, 128);
+  background-color: rgb(128 , 128 , 128);
 }
