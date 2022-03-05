@@ -17,35 +17,28 @@
   
   <main class="main">
     <section id="container">
-      <input type="text" id="texto-tarefa" placeholder="Digite sua tarefa aqui">
+      <div class="center">
+        <input type="text" id="texto-tarefa" placeholder="Digite sua tarefa aqui">
+        <button id="criar-tarefa">Adicionar tarefa</button>        
+        <button id="mover-cima">&#8593;</button>
+        <button id="mover-baixo">&#8595;</button>
+        <button id="salvar-tarefas">Salvar tarefas</button>
+      </div>
 
-      <button id="criar-tarefa">Adicionar tarefa</button>
-      
-      <ol id="lista-tarefas">
-      </ol>
+      <div>
+        <ol id="lista-tarefas">
+        </ol>
+      </div>
 
-      <button id="mover-cima">Cima</button>
-      
-      <button id="mover-baixo">Baixo</button>
-
-      <button id="apaga-tudo">Apagar tudo</button>
-
-      <button id="remover-finalizados">Remover tarefa</button>
-
-      <button id="salvar-tarefas">Salvar tarefas</button>
-
-      <button id="remover-selecionado">Remover Selecionado</button>
-
+      <div class="center">
+        <button id="apaga-tudo">Apagar tudo</button>
+        <button id="remover-finalizados">Remover tarefa concluída</button>
+        <button id="remover-selecionado">Remover tarefa selecionada</button>
+      </div>
     </section>
-
   </main>
 
-
-  <footer class="footer">
-
-  </footer>
-
-
+  <footer class="footer"></footer>
   <script src="script.js"></script>
 
 </body>

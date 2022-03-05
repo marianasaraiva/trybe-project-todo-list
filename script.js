@@ -6,8 +6,8 @@ const buttonRemoveFinalizados = document.getElementById('remover-finalizados');
 const buttonApagaTudo = document.getElementById('apaga-tudo');
 const buttonSalvaTarefas = document.getElementById('salvar-tarefas');
 const buttonRemoveSinalizados = document.getElementById('remover-selecionado');
-// const buttonMoverCima = document.getElementById('mover-cima');
-// const buttonMoverBaixo = document.getElementById('mover-baixo');
+const buttonMoverCima = document.getElementById('mover-cima');
+const buttonMoverBaixo = document.getElementById('mover-baixo');
 
 // criar li ao digitar tarefa e pressionar o botão
 buttonCreateTarefa.addEventListener('click', () => {
@@ -16,7 +16,7 @@ buttonCreateTarefa.addEventListener('click', () => {
     elementLi.innerText = inputTextTarefa.value;
     elementLi.classList.add('item-list');
     olTarefa.appendChild(elementLi);
-    inputTextTarefa.value = '';
+    inputTextTarefa.value = ''; 
   } else {
     alert('Digite um item no local indicado');
   }
@@ -48,6 +48,7 @@ buttonApagaTudo.addEventListener('click', () => {
 buttonRemoveFinalizados.addEventListener('click', () => {
   const tarefaFinalizada = document.querySelectorAll('.completed');
   for (let index = 0; index < tarefaFinalizada.length; index += 1) {
+    console.log(tarefaFinalizada[index]);
     olTarefa.removeChild(tarefaFinalizada[index]);
   }
 });
@@ -64,7 +65,23 @@ window.onload = function () {
   }
 };
 
-// Requisito 13 https://www.javascripttutorial.net/javascript-dom/javascript-siblings/
+// Requisito 13 https://www.javascripttutorial.net/javascript-dom/javascript-siblings/ e 
+// mover selecionado para cima
+buttonMoverCima.addEventListener('click', () => {
+  let selecionada = document.querySelector('.selected');
+  if (selecionada.previousElementSibling) {
+    selecionada.parentNode.insertBefore(selecionada, selecionada.previousElementSibling);
+  }
+});
+
+// mover selecionado para baixo
+buttonMoverBaixo.addEventListener('click', () => {
+  let selecionada = document.querySelector('.selected');
+  if (selecionada.nextElementSibling) {
+    selecionada.parentNode.insertBefore(selecionada.nextElementSibling, selecionada);
+  }
+});
+
 
 // Requisito 14 - Apagar tarefas selecionadas
 buttonRemoveSinalizados.addEventListener('click', () => {

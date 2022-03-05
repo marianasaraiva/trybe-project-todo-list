@@ -14,6 +14,7 @@ body {
   font-family: 'Trebuchet MS', Arial, sans-serif;
   margin: 0;
   padding: 0;
+  font-size: 1.2em;
 }
 
 button {
@@ -36,12 +37,16 @@ button {
 #container {
   background-color: rgba(232 , 238 , 242 , 1);
   border-radius: 5px;
-  padding-left: 29%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .header {
-  background-color: rgba(214 , 201 , 201 , 1);
+  background-color: rgba(232 , 238 , 242 , 1);
   position: absolute;
+  font-size: 1.2em;
   width: 100%;
 }
 
@@ -52,7 +57,7 @@ h1 , p {
 
 .main {
   display: inline-block;
-  margin-top: 140px;
+  margin-top: 200px;
   margin-left: 13%;
   width: 70%;
 }
@@ -61,12 +66,8 @@ h1 , p {
   margin: 15px;
 }
 
-.footer {
-  clear: both;
-}
-
 .completed {
-  color: rgb(0 , 0 , 0);
+  color: rgb(0 , 0, 0);
   text-decoration: line-through;
 }
 
