@@ -17,7 +17,7 @@ Projeto desenvolvido no bloco 5 de Fundamentos de Desenvolvimento Web!
 
 1. Abrir o arquivo index.html com um navegador ou;
 
-2. Acesse pelo link GitPages: 
+2. Acesse pelo link GitPages: https://marianasaraiva.github.io/trybe-project-todo-list/
 
 ## Gif do projeto:
 <p align="center">
