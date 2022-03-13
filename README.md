@@ -21,5 +21,5 @@ Projeto desenvolvido no bloco 5 de Fundamentos de Desenvolvimento Web!
 
 ## Gif do projeto:
 <p align="center">
-  <img  src="" alt="Project To Do List Gif"/>
+  <img  src="https://github.com/marianasaraiva/trybe-project-todo-list/blob/main/ToDo%20LIst.gif" alt="Project To Do List Gif"/>
 </p>
