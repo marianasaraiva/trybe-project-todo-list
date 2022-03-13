@@ -5,6 +5,7 @@ Projeto desenvolvido no bloco 5 de Fundamentos de Desenvolvimento Web!
 
 - Manipular CSS
 - Manipular Javascript
+- Utilizar HTML para construir páginas WEB.
 
 
 ## O que deverá ser desenvolvido
@@ -12,13 +13,13 @@ Projeto desenvolvido no bloco 5 de Fundamentos de Desenvolvimento Web!
 - Será desenvolvido uma lista de tarefas usando `HTML`, `CSS` e `JavaScript`.
 
 
-## Instruções para baixar o projeto:
+## Instruções para visualizar o projeto:
 
-1. Clone o repositório
+1. Abrir o arquivo index.html com um navegador ou;
 
-2. Instale as dependências com `npm install`
+2. Acesse pelo link GitPages: 
 
-
-## Dicas
-
-- Para colocar sua página no [GitHub Pages](https://pages.github.com/), não é necessário remover o conteúdo que já está lá, você pode apenas adicionar essa nova página. Para isso, todo o conteúdo desse projeto deve ser colocado em uma pasta `/projetos/todo-list`.
+## Gif do projeto:
+<p align="center">
+  <img  src="" alt="Project To Do List Gif"/>
+</p>
